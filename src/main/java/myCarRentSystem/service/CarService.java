@@ -80,7 +80,6 @@ public class CarService{
 
     public void deleteCarById(long id) {
         carRepository.deleteById(id);
-
     }
 
 
