@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Rent Car Service</title>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+	
+</head>
+<body>
+
+	<div class="container my-2">
+	<h1>Rent Car Service</h1>
+
+		<h2>user service</h2>
+
+		<a th:href = "@{/api/v1/register}" class="btn btn-primary btn-sm mb-3"> register </a>
+		<a th:href = "@{/api/v1/queryUsers}" class="btn btn-primary btn-sm mb-3"> queryUsers </a>
+
+		<h2>car service</h2>
+		<a th:href = "@{/api/v1/queryCars}" class="btn btn-primary btn-sm mb-3"> query and rent car </a>
+		<a th:href = "@{/api/v1/returnCarForm}" class="btn btn-primary btn-sm mb-3"> return car </a>
+
+
+		<h2>order service</h2>
+		<a th:href = "@{/api/v1/queryOrders}" class="btn btn-primary btn-sm mb-3"> queryOrders </a>
+
+	</div>
+</body>
+</html>
